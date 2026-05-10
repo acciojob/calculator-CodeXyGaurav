@@ -1,2 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-/* Your CSS Code here. */
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f1f1f;
+}
+
+.calculator{
+  background: #2d2d2d;
+  padding: 20px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+#input{
+  width: 100%;
+  height: 60px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 28px;
+  text-align: right;
+  background: #f4f4f4;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+
+button{
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover{
+  transform: scale(1.05);
+}
+
+.number{
+  background: #4a4a4a;
+  color: white;
+}
+
+.operator{
+  background: orange;
+  color: white;
+}
+
+#dot{
+  background: #666;
+  color: white;
+}
+
+#ans{
+  background: green;
+  color: white;
+}
+
+#clr{
+  grid-column: span 4;
+  background: red;
+  color: white;
+}
